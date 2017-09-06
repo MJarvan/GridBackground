@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "网格背景", "网格背�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "飞镖", "飞镖\飞镖.csproj", "{815C4475-38CF-4C80-B5F2-A4FEC66DDC51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "圆弧", "圆弧\圆弧.csproj", "{44245F91-BFC3-42C0-A32B-1B12C5E77828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{815C4475-38CF-4C80-B5F2-A4FEC66DDC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{815C4475-38CF-4C80-B5F2-A4FEC66DDC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{815C4475-38CF-4C80-B5F2-A4FEC66DDC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

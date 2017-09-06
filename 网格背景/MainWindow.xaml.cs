@@ -273,7 +273,35 @@ namespace 网格背景
 
 			#region 飞镖
 
-			Grid grid = Dart.GetDart();
+			//Grid grid = NewDart.GetNewDart();
+
+			//VisualBrush visualbrush = new VisualBrush(grid);
+
+			//DrawingBrush drawingBrushAll = new DrawingBrush(
+			//	new GeometryDrawing(
+			//		visualbrush,
+			//		new Pen(new SolidColorBrush(Colors.Gray),double.NaN)
+			//		{
+			//			//DashStyle = dashstyle
+			//		},
+			//		new RectangleGeometry(
+			//			new Rect(0,0,10,10)
+			//			)
+			//		)
+			//	);
+			//drawingBrushAll.Stretch = Stretch.Fill;
+			//drawingBrushAll.TileMode = TileMode.Tile;
+			//drawingBrushAll.Viewbox = new Rect(0,0,10,10);
+			//drawingBrushAll.ViewboxUnits = BrushMappingMode.Absolute;
+			//drawingBrushAll.Viewport = new Rect(0,0,10,10);
+			//drawingBrushAll.ViewportUnits = BrushMappingMode.Absolute;
+			//this.Background = drawingBrushAll;
+
+			#endregion
+
+			#region 真正的点
+
+			Grid grid = NewPoint.GetNewPoint();
 
 			VisualBrush visualbrush = new VisualBrush(grid);
 
@@ -285,15 +313,15 @@ namespace 网格背景
 						//DashStyle = dashstyle
 					},
 					new RectangleGeometry(
-						new Rect(0,0,30,30)
+						new Rect(0,0,10,10)
 						)
 					)
 				);
 			drawingBrushAll.Stretch = Stretch.Fill;
 			drawingBrushAll.TileMode = TileMode.Tile;
-			drawingBrushAll.Viewbox = new Rect(0,0,30,30);
+			drawingBrushAll.Viewbox = new Rect(0,0,10,10);
 			drawingBrushAll.ViewboxUnits = BrushMappingMode.Absolute;
-			drawingBrushAll.Viewport = new Rect(0,0,30,30);
+			drawingBrushAll.Viewport = new Rect(0,0,10,10);
 			drawingBrushAll.ViewportUnits = BrushMappingMode.Absolute;
 			this.Background = drawingBrushAll;
 

@@ -25,7 +25,7 @@ namespace 飞镖
 		public MainWindow()
 		{
 			InitializeComponent();
-
+			UseLayoutRounding = true;
 			array[0,0] = 0;
 			array[0,1] = 1;
 			array[1,0] = 1;
@@ -41,8 +41,8 @@ namespace 飞镖
 			#region 角
 
 			Grid grid = new Grid();
-			grid.Width = 400;
-			grid.Height = 200;
+			grid.Width = 30;
+			grid.Height = 10;
 
 			ColumnDefinition cd1 = new ColumnDefinition();
 			cd1.Width = new GridLength(1,GridUnitType.Star);
@@ -52,8 +52,8 @@ namespace 飞镖
 			grid.ColumnDefinitions.Add(cd2);
 
 			TextBlock textblockL = new TextBlock();
-			textblockL.Width = 200;
-			textblockL.Height = 200;
+			textblockL.Width = 15;
+			textblockL.Height = 10;
 
 			LinearGradientBrush linearBrushL = new LinearGradientBrush();
 
@@ -74,14 +74,14 @@ namespace 飞镖
 						//DashStyle = dashstyle
 					},
 					new RectangleGeometry(
-						new Rect(0,0,200,200)
+						new Rect(0,0,15,10)
 						)
 					)
 				);
 
 			drawingBrushL.Stretch = Stretch.Fill;
 			drawingBrushL.TileMode = TileMode.FlipXY;
-			drawingBrushL.Viewbox = new Rect(0,0,200,200);
+			drawingBrushL.Viewbox = new Rect(0,0,15,10);
 			drawingBrushL.ViewboxUnits = BrushMappingMode.Absolute;
 			textblockL.Background = drawingBrushL;
 			grid.Children.Add(textblockL);
@@ -89,8 +89,8 @@ namespace 飞镖
 			Grid.SetRow(textblockL,0);
 
 			TextBlock textblockR = new TextBlock();
-			textblockR.Width = 200;
-			textblockR.Height = 200;
+			textblockR.Width = 15;
+			textblockR.Height = 10;
 
 			LinearGradientBrush linearBrushR = new LinearGradientBrush();
 
@@ -99,8 +99,8 @@ namespace 飞镖
 			linearBrushR.EndPoint = new Point(0,1);
 			linearBrushR.GradientStops.Add(new GradientStop(Colors.White,0.0));
 			linearBrushR.GradientStops.Add(new GradientStop(Colors.White,0.5));
-			linearBrushR.GradientStops.Add(new GradientStop(Colors.LightGray,0.5));
-			linearBrushR.GradientStops.Add(new GradientStop(Colors.LightGray,1.0));
+			linearBrushR.GradientStops.Add(new GradientStop(Colors.Black,0.5));
+			linearBrushR.GradientStops.Add(new GradientStop(Colors.Black,1.0));
 
 
 			DrawingBrush drawingBrushR = new DrawingBrush(
@@ -111,14 +111,14 @@ namespace 飞镖
 						//DashStyle = dashstyle
 					},
 					new RectangleGeometry(
-						new Rect(0,0,200,200)
+						new Rect(0,0,15,10)
 						)
 					)
 				);
 
 			drawingBrushR.Stretch = Stretch.Fill;
 			drawingBrushR.TileMode = TileMode.FlipXY;
-			drawingBrushR.Viewbox = new Rect(0,0,200,200);
+			drawingBrushR.Viewbox = new Rect(0,0,15,10);
 			drawingBrushR.ViewboxUnits = BrushMappingMode.Absolute;
 			textblockR.Background = drawingBrushR;
 			grid.Children.Add(textblockR);
@@ -130,8 +130,8 @@ namespace 飞镖
 			for(int i = 0;i <= 3;i++)
 			{
 				TextBlock tb = new TextBlock();
-				tb.Width = 200;
-				tb.Height = 200;
+				tb.Width = 10;
+				tb.Height = 10;
 
 				VisualBrush visualbrush = new VisualBrush(grid);
 
@@ -143,36 +143,36 @@ namespace 飞镖
 						//DashStyle = dashstyle
 					},
 						new RectangleGeometry(
-							new Rect(0,0,200,200)
+							new Rect(0,0,10,10)
 							)
 						)
 					);
 
 				drawingBrushTest.Stretch = Stretch.Uniform;
-				drawingBrushTest.Viewbox = new Rect(0,0,200,200);
+				drawingBrushTest.Viewbox = new Rect(0,0,10,10);
 				drawingBrushTest.ViewboxUnits = BrushMappingMode.Absolute;
 				tb.Background = drawingBrushTest;
 				test.Children.Add(tb);
 				Grid.SetRow(tb,array[i,0]);
 				Grid.SetColumn(tb,array[i,1]);
 
-				RotateTransform rotateTransform1 = new RotateTransform( i * 90,100,100);
+				RotateTransform rotateTransform1 = new RotateTransform( i * 90,5,5);
 				TransformGroup transformGroup1 = new TransformGroup();
 				transformGroup1.Children.Add(rotateTransform1);
 				tb.RenderTransform = transformGroup1;
 			}
 
 			Grid gridC = new Grid();
-			gridC.Width = 200;
-			gridC.Height = 200;
+			gridC.Width = 10;
+			gridC.Height = 10;
 			gridC.Background = new SolidColorBrush(Colors.LightGray);
 			test.Children.Add(gridC);
 			Grid.SetColumn(gridC,1);
 			Grid.SetRow(gridC,1);
 
 			Ellipse ellipse = new Ellipse();
-			ellipse.Width = 200;
-			ellipse.Height = 200;
+			ellipse.Width = 10;
+			ellipse.Height = 10;
 			ellipse.Fill = new SolidColorBrush(Colors.White);
 			gridC.Children.Add(ellipse);
 		}

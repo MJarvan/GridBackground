@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:飞镖"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="600" Loaded="Window_Loaded">
-	<Grid Name="test" Height="600" Width="600">
+        Title="MainWindow" Height="200" Width="200" Loaded="Window_Loaded">
+	<Grid Name="test" Height="30" Width="30">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"></RowDefinition>
 			<RowDefinition Height="*"></RowDefinition>
