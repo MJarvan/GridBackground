@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "飞镖", "飞镖\飞镖.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "圆弧", "圆弧\圆弧.csproj", "{44245F91-BFC3-42C0-A32B-1B12C5E77828}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "光标", "光标\光标.csproj", "{A973A9E3-46ED-4CFF-B784-AE06A4713B45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44245F91-BFC3-42C0-A32B-1B12C5E77828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A973A9E3-46ED-4CFF-B784-AE06A4713B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A973A9E3-46ED-4CFF-B784-AE06A4713B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A973A9E3-46ED-4CFF-B784-AE06A4713B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A973A9E3-46ED-4CFF-B784-AE06A4713B45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
